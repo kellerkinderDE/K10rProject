@@ -1,0 +1,29 @@
+{
+  "label": {
+    "de": "Projekt-Abläufe",
+    "en": "Project Workflow"
+  },
+  "copyright": "(c) by Kellerkinder / k10r GmbH",
+  "license": "MIT",
+  "link": "https://www.kellerkinder.de",
+  "author": "Kellerkinder / k10r GmbH",
+  "support": "anfragen@kellerkinder.de",
+
+  "currentVersion": "1.0.0",
+
+  "changelog": {
+    "de": {
+      "1.0.0": "Erstveröffentlichung"
+    },
+    "en": {
+      "1.0.0": "First release"
+    }
+  },
+
+  "compatibility": {
+    "minimumVersion": "5.0.0",
+    "maximumVersion": null,
+    "blacklist": [
+    ]
+  }
+}

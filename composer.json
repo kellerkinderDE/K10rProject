@@ -1,0 +1,19 @@
+{
+  "name": "k10r/project",
+  "type": "shopware-core-plugin",
+  "description": "Automatic project-update management",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Siegmund Mioduszewski",
+      "email": "s.mioduszewski@k10r.de"
+    },
+    {
+      "name": "Uwe Kleinmann",
+      "email": "u.kleinmann@k10r.de"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
