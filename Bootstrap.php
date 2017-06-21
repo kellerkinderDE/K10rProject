@@ -164,6 +164,7 @@ class Shopware_Plugins_Core_K10rProject_Bootstrap extends Shopware_Components_Pl
         return new \Doctrine\Common\Collections\ArrayCollection(
             [
                 new \Shopware\Plugins\K10rProject\Commands\CreateMigration(),
+                new \Shopware\Plugins\K10rProject\Commands\UpdateSnippets(),
             ]
         );
     }
