@@ -24,5 +24,7 @@ Use the `k10r:plugin:install` command of [K10rDeployment](https://github.com/kel
 ### Update Text Snippets
 You can update snippets ("Textbausteine") by adding changes to the [Snippets.php](Components/Snippets.php). Check the existing example for details.
 
+Snippets get updated on each install or update. You can also run the command `k10r:snippets:update`.
+
 ## License
 MIT licensed, see `LICENSE.md`
