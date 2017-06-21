@@ -9,13 +9,15 @@
   "author": "Kellerkinder / k10r GmbH",
   "support": "anfragen@kellerkinder.de",
 
-  "currentVersion": "1.0.0",
+  "currentVersion": "1.0.1",
 
   "changelog": {
     "de": {
+      "1.0.1": "Befehl für Textbausteine ergänzt",
       "1.0.0": "Erstveröffentlichung"
     },
     "en": {
+      "1.0.1": "Add command for snippets",
       "1.0.0": "First release"
     }
   },
