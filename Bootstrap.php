@@ -273,6 +273,8 @@ class Shopware_Plugins_Core_K10rProject_Bootstrap extends Shopware_Components_Pl
             $migrations[$version] = $class; //YYYYMMDDHHMMSS => MigrationYYYYMMDDHHMMSS
         }
 
+        asort($migrations);
+
         return $migrations;
 
     }
