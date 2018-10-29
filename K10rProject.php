@@ -2,6 +2,7 @@
 
 namespace K10rProject;
 
+use K10rProject\Components\Snippets;
 use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
@@ -50,6 +51,8 @@ class K10rProject extends Plugin
     {
         $versionClosures = [
             '1.0.0' => function () {
+                $this->container->get('k10r_project.helpers.project')->updateSnippets(Snippets::$snippets);
+
                 return true;
             },
         ];
