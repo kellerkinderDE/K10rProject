@@ -9,8 +9,8 @@ __This is a project specific plugin, so make sure every project has it's own cop
 * Download the ZIP or clone this repository into your `engine/Shopware/Plugins/Local/Core/` folder.
 
 ### Create a Migration
-* Activate the plugin in your local development instance
-* Use the shopware command line to create a new migration: `php bin/console k10r:migration:create`
+* Install and activate NetcomMigrations in your local development instance
+* Use the shopware command line to create a new migration: `php bin/console netcom:migrations:create 1.0.0 MyFirstMigration K10rProject`
 * You will see a new `Migration2....php` file. The numbers are a time code to make sure all migrations run in the order of their creation.
 * Add your custom code to the `migrate` method of the migration.
 

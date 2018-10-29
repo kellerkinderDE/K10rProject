@@ -1,8 +1,8 @@
 <?php
 
-namespace Shopware\Plugins\K10rProject\Components;
+namespace K10rProject\Components;
 
-class Snippets
+final class Snippets
 {
     /** @var array */
     public static $snippets = [
