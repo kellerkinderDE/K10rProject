@@ -2,7 +2,7 @@
   "name": "k10r/project",
   "type": "shopware-plugin",
   "description": "Automatic project management",
-  "license": "Commercial",
+  "license": "MIT",
   "authors": [
     {
       "name": "Kellerkinder GmbH",
