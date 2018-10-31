@@ -50,7 +50,7 @@ class K10rProject extends Plugin
     private function applyUpdates($oldVersion = null, $newVersion = null)
     {
         $versionClosures = [
-            '1.0.0' => function () {
+            '2.0.0' => function () {
                 $this->container->get('k10r_project.helpers.project')->updateSnippets(Snippets::$snippets);
 
                 return true;
