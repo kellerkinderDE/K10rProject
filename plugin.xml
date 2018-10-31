@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Projektspezifische Updates</label>
+    <label lang="en">Project-specific updates</label>
+
+    <version>2.0.0</version>
+    <link>https://www.kellerkinder.de</link>
+    <author>Kellerkinder GmbH</author>
+    <compatibility minVersion="5.2.10" />
+
+    <description lang="de"><![CDATA[
+    <ul>
+        <li>Projektspezifische Migrationen</li>
+        <li>Plugin-Lizenzmanagement</li>
+        <li>Textbausteinverwaltung</li>
+    </ul>
+    ]]></description>
+    <description lang="en"><![CDATA[
+    <ul>
+        <li>Project-specific Migrations</li>
+        <li>Plugin License Management</li>
+        <li>Snippet Management</li>
+    </ul>
+    ]]></description>
+
+    <changelog version="2.0.0">
+        <changes lang="de">Umbau auf neues Pluginsystem, Migrationen via NetcomMigrations</changes>
+        <changes lang="en">Switch to new plugin system, use migrations via NetcomMigrations</changes>
+    </changelog>
+
+    <requiredPlugins>
+        <requiredPlugin pluginName="NetcomMigrations" minVersion="1.1.0"/>
+    </requiredPlugins>
+</plugin>

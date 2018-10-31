@@ -1,19 +1,22 @@
 {
   "name": "k10r/project",
-  "type": "shopware-core-plugin",
-  "description": "Automatic project-update management",
+  "type": "shopware-plugin",
+  "description": "Automatic project management",
   "license": "MIT",
   "authors": [
     {
-      "name": "Siegmund Mioduszewski",
-      "email": "s.mioduszewski@k10r.de"
-    },
-    {
-      "name": "Uwe Kleinmann",
-      "email": "u.kleinmann@k10r.de"
+      "name": "Kellerkinder GmbH",
+      "email": "anfragen@kellerkinder.de"
     }
   ],
   "require": {
-    "composer/installers": "~1.0"
+    "composer/installers": "^1.5"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "k10r/codestyle": "^1.0"
+  },
+  "extra": {
+    "installer-name": "K10rProject"
   }
 }

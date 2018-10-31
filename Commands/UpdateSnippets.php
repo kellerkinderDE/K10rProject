@@ -1,9 +1,9 @@
 <?php
 
-namespace Shopware\Plugins\K10rProject\Commands;
+namespace K10rProject\Commands;
 
+use K10rProject\Components\Snippets;
 use Shopware\Commands\ShopwareCommand;
-use Shopware\Plugins\K10rProject\Components\Snippets;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -17,15 +17,13 @@ class UpdateSnippets extends ShopwareCommand
     }
 
     /**
-     * @param InputInterface $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
-     *
-     * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->container->get('plugins')->Core()->K10rProject()->updateSnippets(Snippets::$snippets);
+        $this->container->get('k10r_project.helpers.project')->updateSnippets(Snippets::$snippets);
 
-        $output->writeln('Snippets have been updated.');
+        $output->writeln('<info>Snippets have been updated.</info>');
     }
 }
