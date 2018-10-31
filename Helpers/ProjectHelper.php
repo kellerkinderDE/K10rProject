@@ -4,6 +4,7 @@ namespace K10rProject\Helpers;
 
 use Shopware\Components\Model\ModelManager;
 use Shopware\Models\Shop\Shop;
+use Shopware\Models\Site\Group;
 use Shopware\Models\Snippet\Snippet;
 
 class ProjectHelper
@@ -51,7 +52,7 @@ class ProjectHelper
 
     public function updateCmsSiteGroupNames(array $cmsGroups)
     {
-        $groupRepo = Shopware()->Models()->getRepository('Shopware\Models\Site\Group');
+        $groupRepo = $this->modelManager->getRepository(Group::class);
 
         $i = 0;
         foreach ($cmsGroups as $group) {
@@ -80,10 +81,10 @@ class ProjectHelper
             $shop = null;
         }
 
-        if (!($shop instanceof \Shopware\Models\Shop\Shop)) {
-            $shop = Shopware()->Models()
-                ->getRepository('Shopware\Models\Shop\Shop')
-                ->findOneBy(['default' => true]);
+        if (!($shop instanceof Shop)) {
+            $shop = $this->modelManager
+                ->getRepository(Shop::class)
+                ->getDefault();
         }
 
         return $shop;
