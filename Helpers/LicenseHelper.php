@@ -29,6 +29,8 @@ class LicenseHelper
     {
         if (method_exists($this->licenseService, 'importLicence')) { // SW 5.5 compatibility
             $this->licenseService->importLicence($licenseKey);
+        } else {
+            trigger_error('There is no plugin license management after Shopware 5.5', E_USER_DEPRECATED);
         }
     }
 
