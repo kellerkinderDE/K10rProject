@@ -2,6 +2,7 @@
 
 namespace K10rProject\Helpers;
 
+use Exception;
 use Shopware\Components\Model\ModelManager;
 use Shopware\Models\Shop\Shop;
 use Shopware\Models\Site\Group;
