@@ -25,9 +25,6 @@ class K10rProject extends Plugin
      */
     public function uninstall(UninstallContext $context)
     {
-        if (!$context->keepUserData()) {
-        }
-
         parent::uninstall($context);
     }
 
@@ -37,6 +34,8 @@ class K10rProject extends Plugin
     public function update(UpdateContext $updateContext)
     {
         $this->applyUpdates($updateContext->getCurrentVersion(), $updateContext->getUpdateVersion());
+
+        $this->container->get('k10r_project.helpers.project')->updateSnippets(Snippets::$snippets);
 
         parent::update($updateContext);
     }
@@ -51,8 +50,6 @@ class K10rProject extends Plugin
     {
         $versionClosures = [
             '2.0.0' => function () {
-                $this->container->get('k10r_project.helpers.project')->updateSnippets(Snippets::$snippets);
-
                 return true;
             },
         ];
