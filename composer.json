@@ -1,22 +1,58 @@
 {
   "name": "k10r/project",
-  "type": "shopware-plugin",
   "description": "Automatic project management",
-  "license": "MIT",
+  "version": "v1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "Commercial",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "authors": [
     {
       "name": "Kellerkinder GmbH",
-      "email": "anfragen@kellerkinder.de"
+      "email": "hallo@kellerkinder.de",
+      "homepage": "https://www.kellerkinder.de/",
+      "role": "Contributor"
     }
   ],
   "require": {
-    "composer/installers": "^1.5"
+    "php": "^7.2",
+    "shopware/core": "*",
+    "shopware/administration": "*",
+    "shopware/storefront": "*"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master",
-    "k10r/codestyle": "^1.0"
+    "fzaninotto/faker": "1.8.0",
+    "k10r/codestyle": "^1.0",
+    "phpstan/phpstan": "^0.11",
+    "phpstan/phpstan-phpunit": "^0.11",
+    "phpunit/phpunit": "^8.1"
   },
   "extra": {
-    "installer-name": "K10rProject"
+    "shopware-plugin-class": "K10rProject\\K10rProject",
+    "copyright": "(c) Kellerkinder GmbH",
+    "label": {
+      "de-DE": "Projektspezifische Updates",
+      "en-GB": "Project-specific updates"
+    },
+    "description": {
+      "de-DE": "Projektspezifische Migrationen",
+      "en-GB": "Project-specific Migrations"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "K10rProject\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "K10rProject\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "phpcs": "vendor/bin/php-cs-fixer fix"
   }
 }

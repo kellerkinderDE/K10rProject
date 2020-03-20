@@ -1,1 +1,0 @@
-K10rProject aktualisiert Shop-Konfiguration und weitere Konfiguration bspw. während des Deployments.
